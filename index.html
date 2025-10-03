@@ -5,51 +5,53 @@
 <title>Star Wars OT Campaign Pitches</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: 'Orbitron', sans-serif;
-    background: black url('https://i.ibb.co/2yX7V6v/starfield.jpg') repeat;
-    color: #FFE81F;
-    margin: 20px;
-  }
-  h1 {
-    color: #FFE81F;
-    text-shadow: 2px 2px 5px #000;
-    font-size: 2.5em;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  li {
-    margin: 10px 0;
-  }
-  a {
-    color: #66ccff;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  hr {
-    border: 1px solid #FFE81F;
-    margin: 20px 0;
-  }
-  ul li::before {
-    content: "★ ";
-    color: #FFD700;
-  }
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: black url('https://i.ibb.co/2yX7V6v/starfield.jpg') repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 0;
+  color: #FFE81F;
+}
+.container {
+  background: rgba(0,0,0,0.85);
+  border: 2px solid #66ccff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #66ccff;
+  padding: 30px 40px;
+  max-width: 800px;
+  width: 90%;
+}
+h1 {
+  color: #66ccff;
+  text-shadow: 1px 1px 5px #000;
+  font-size: 2.5em;
+  border-bottom: 2px solid #66ccff;
+  padding-bottom: 10px;
+}
+ul li::before { content: "• "; color: #FFD700; }
+a {
+  color: #66ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover { text-decoration: underline; color: #FF6F00; }
 </style>
 </head>
 <body>
-<h1>Star Wars OT Campaign Pitches</h1>
-<p>Welcome, players! Click a campaign below to read its pitch and get hooked into the adventure.</p>
-<ul>
-  <li><a href='shadows.html'>Shadows Over Ryloth</a></li>
-  <li><a href='corellian.html'>The Corellian Gambit</a></li>
-  <li><a href='crimson.html'>Crimson Tides</a></li>
-  <li><a href='blackmarket.html'>Black Market Wars</a></li>
-  <li><a href='fractured.html'>The Fractured Republic</a></li>
-</ul>
+  <div class="container">
+    <h1>Star Wars OT Campaign Pitches</h1>
+    <p>Welcome, players! Click a campaign below to read its pitch and get hooked into the adventure.</p>
+    <ul>
+      <li><a href='shadows.html'>Shadows Over Ryloth</a></li>
+      <li><a href='corellian.html'>The Corellian Gambit</a></li>
+      <li><a href='crimson.html'>Crimson Tides</a></li>
+      <li><a href='blackmarket.html'>Black Market Wars</a></li>
+      <li><a href='fractured.html'>The Fractured Republic</a></li>
+    </ul>
+  </div>
 </body>
 </html>
