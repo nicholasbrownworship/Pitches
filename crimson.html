@@ -5,57 +5,36 @@
 <title>Crimson Tides</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: 'Orbitron', sans-serif;
-    background: black url('https://i.ibb.co/2yX7V6v/starfield.jpg') repeat;
-    color: #FFE81F;
-    margin: 20px;
-  }
-  h1 {
-    color: #00ccff;
-    text-shadow: 2px 2px 5px #000;
-    font-size: 2.5em;
-  }
-  h2 {
-    color: #0099ff;
-    text-shadow: 1px 1px 3px #000;
-  }
-  p, ul { max-width: 700px; }
-  .back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #FFE81F;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px #000;
-  }
-  .back-button:hover { background: #FFD700; }
-  hr { border: 1px solid #FFE81F; margin: 20px 0; }
-  ul li::before { content: "★ "; color: #FFD700; }
+body { font-family: 'Orbitron', sans-serif; background: black url('https://i.ibb.co/2yX7V6v/starfield.jpg') repeat; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; margin: 0; padding: 40px 0; color: #FFE81F; }
+.container { background: rgba(0,0,0,0.85); border: 2px solid #66ccff; border-radius: 20px; box-shadow: 0 0 20px #66ccff; padding: 30px 40px; max-width: 800px; width: 90%; }
+h1 { color: #00ccff; text-shadow: 1px 1px 5px #000; font-size: 2.5em; border-bottom: 2px solid #00ccff; padding-bottom: 10px; }
+h2 { color: #0099ff; text-shadow: 1px 1px 3px #000; }
+p, ul { max-width: 700px; }
+ul li::before { content: "• "; color: #FFD700; }
+.back-button { margin-top: 20px; padding: 10px 20px; background: #222; color: #66ccff; font-weight: bold; border: 2px solid #66ccff; border-radius: 8px; cursor: pointer; box-shadow: 0 0 10px #66ccff; }
+.back-button:hover { background: #66ccff; color: #000; box-shadow: 0 0 15px #66ccff; }
 </style>
 </head>
 <body>
-<h1>Crimson Tides</h1>
-<h2>Pitch</h2>
-<p>The crew gets caught in a violent Outer Rim pirate war. Smuggling, treasure hunting, and double-crosses define a chaotic struggle for survival. Loyalties shift constantly, and the crew may become the rulers—or victims—of the pirate underworld.</p>
-<h2>Player Hooks</h2>
-<ul>
-<li>Pirate or ex-privateer seeking revenge or fortune</li>
-<li>Smuggler or slicer with personal scores</li>
-<li>Bounty hunter with moral code</li>
-<li>Force-sensitive hiding in the Outer Rim</li>
-<li>Mercenary/ex-military for tactics and muscle</li>
-</ul>
-<h2>Campaign Arc</h2>
-<ul>
-<li>Local conflicts escalate into full pirate war</li>
-<li>Player alliances define power dynamics</li>
-<li>Imperial or Rebel interference raises stakes</li>
-</ul>
-<button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
+  <div class="container">
+    <h1>Crimson Tides</h1>
+    <h2>Pitch</h2>
+    <p>The crew gets caught in a violent Outer Rim pirate war. Smuggling, treasure hunting, and double-crosses define a chaotic struggle for survival. Loyalties shift constantly, and the crew may become the rulers—or victims—of the pirate underworld.</p>
+    <h2>Player Hooks</h2>
+    <ul>
+      <li>Pirate or ex-privateer seeking revenge or fortune</li>
+      <li>Smuggler or slicer with personal scores</li>
+      <li>Bounty hunter with moral code</li>
+      <li>Force-sensitive hiding in the Outer Rim</li>
+      <li>Mercenary/ex-military for tactics and muscle</li>
+    </ul>
+    <h2>Campaign Arc</h2>
+    <ul>
+      <li>Local conflicts escalate into full pirate war</li>
+      <li>Player alliances define power dynamics</li>
+      <li>Imperial or Rebel interference raises stakes</li>
+    </ul>
+    <button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
+  </div>
 </body>
 </html>
