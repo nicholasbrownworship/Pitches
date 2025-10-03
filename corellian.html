@@ -17,7 +17,9 @@ body {
   color: #FFE81F;
 }
 
+/* The datapad container */
 .container {
+  position: relative; /* makes absolute images relative to this container */
   background: rgba(0,0,0,0.85);
   border: 2px solid #66ccff;
   border-radius: 20px;
@@ -69,27 +71,27 @@ ul li::before {
 
 /* Floating image overlapping datapad */
 .floating-image {
-  position: fixed;   /* pinned to viewport, overlaps everything */
-  bottom: 50px;      /* adjust to align with datapad */
-  right: 50px;       /* adjust to align with datapad */
-  width: 200px;      /* adjust size as needed */
-  z-index: 999;      /* ensures it sits on top */
+  position: absolute;   /* relative to container */
+  bottom: 20px;         /* adjust to overlap datapad as needed */
+  right: 20px;          /* adjust to overlap datapad as needed */
+  width: 200px;         /* size of floating image */
+  z-index: 10;          /* ensures it appears above container content */
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .floating-image {
     width: 150px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 15px;
+    right: 15px;
   }
 }
 
 @media (max-width: 600px) {
   .floating-image {
     width: 100px;
-    bottom: 30px;
-    right: 30px;
+    bottom: 10px;
+    right: 10px;
   }
 }
 </style>
@@ -118,9 +120,9 @@ ul li::before {
     </ul>
 
     <button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
-  </div>
 
-  <!-- Floating image overlapping datapad -->
-  <img src="crew_ship.png" alt="Crew Ship" class="floating-image">
+    <!-- Floating image overlapping datapad -->
+    <img src="crew_ship.png" alt="Crew Ship" class="floating-image">
+  </div>
 </body>
 </html>
