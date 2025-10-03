@@ -37,6 +37,25 @@ ul li::before { content: "• "; color: #FFD700; }
     <button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
   </div>
 
+  /* Style for the game container */
+#game-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+/* Make the canvas fill the container when in fullscreen */
+#game-container:fullscreen #game-canvas {
+    width: 100%;
+    height: 100%;
+}
+
   <iframe id="game-iframe" src="https://play.famobi.com/table-tennis-world-tour/A1000-10B" webkit-playsinline="true" scrolling="no" frameborder="0" allow="autoplay"></iframe>
 </body>
 </html>
