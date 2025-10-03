@@ -21,7 +21,7 @@ body::before {
   position: fixed;
   top:0; left:0;
   width:100%; height:100%;
-  background: url('ChatGPT Image Oct 3, 2025, 10_59_16 AM.png') repeat;
+  background: url('starfield.png') repeat;
   background-size: cover;
   animation: starfield 120s linear infinite;
   z-index:-1;
@@ -53,18 +53,19 @@ h2 {
   margin-top: 20px;
 }
 p { line-height: 1.6; }
-a {
+.back-button {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 10px 20px;
   border: 2px solid #FFD700;
   border-radius: 12px;
   color: #FFD700;
   text-decoration: none;
   background: rgba(0,0,0,0.7);
+  font-weight: bold;
   transition: all 0.3s;
 }
-a:hover {
+.back-button:hover {
   background: #FFD700;
   color: #000;
   box-shadow: 0 0 10px #FFD700;
@@ -82,7 +83,7 @@ a:hover {
     <h2>Why Play This Campaign</h2>
     <p>This campaign focuses on the gritty underworld of the Original Trilogy era, perfect for characters who thrive on cunning, charm, and a willingness to bend the rules. Every session will bring tough choices about loyalty, greed, and survival, with credits and consequences always on the line. If you’ve ever wanted to be part of the syndicate wars that run parallel to the fight for the galaxy, this is your story.</p>
     
-    <a href="index.html">Back to Homepage</a>
+    <a href="index.html" class="back-button">← Back to Homepage</a>
   </div>
 </body>
 </html>
