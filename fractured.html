@@ -5,57 +5,36 @@
 <title>The Fractured Republic</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: 'Orbitron', sans-serif;
-    background: black url('https://i.ibb.co/2yX7V6v/starfield.jpg') repeat;
-    color: #FFE81F;
-    margin: 20px;
-  }
-  h1 {
-    color: #66ff66;
-    text-shadow: 2px 2px 5px #000;
-    font-size: 2.5em;
-  }
-  h2 {
-    color: #33cc33;
-    text-shadow: 1px 1px 3px #000;
-  }
-  p, ul { max-width: 700px; }
-  .back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #FFE81F;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px #000;
-  }
-  .back-button:hover { background: #FFD700; }
-  hr { border: 1px solid #FFE81F; margin: 20px 0; }
-  ul li::before { content: "★ "; color: #FFD700; }
+body { font-family: 'Orbitron', sans-serif; background: black url('https://i.ibb.co/2yX7V6v/starfield.jpg') repeat; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; margin: 0; padding: 40px 0; color: #FFE81F; }
+.container { background: rgba(0,0,0,0.85); border: 2px solid #66ccff; border-radius: 20px; box-shadow: 0 0 20px #66ccff; padding: 30px 40px; max-width: 800px; width: 90%; }
+h1 { color: #ff9933; text-shadow: 1px 1px 5px #000; font-size: 2.5em; border-bottom: 2px solid #ff9933; padding-bottom: 10px; }
+h2 { color: #ff6600; text-shadow: 1px 1px 3px #000; }
+p, ul { max-width: 700px; }
+ul li::before { content: "• "; color: #FFD700; }
+.back-button { margin-top: 20px; padding: 10px 20px; background: #222; color: #66ccff; font-weight: bold; border: 2px solid #66ccff; border-radius: 8px; cursor: pointer; box-shadow: 0 0 10px #66ccff; }
+.back-button:hover { background: #66ccff; color: #000; box-shadow: 0 0 15px #66ccff; }
 </style>
 </head>
 <body>
-<h1>The Fractured Republic</h1>
-<h2>Pitch</h2>
-<p>The crew operates in a star system fractured by war between Rebel sympathizers, Imperial remnants, and local warlords. Every mission could tip the balance of power. They rescue civilians, strike key targets, and determine which factions survive.</p>
-<h2>Player Hooks</h2>
-<ul>
-<li>Rebel operative with personal vendetta</li>
-<li>Ex-Imperial pilot seeking redemption</li>
-<li>Smuggler or slicer surviving between factions</li>
-<li>Force-sensitive caught in political crossfire</li>
-<li>Mercenary with unclear loyalties</li>
-</ul>
-<h2>Campaign Arc</h2>
-<ul>
-<li>Skirmishes and missions → critical battles</li>
-<li>Player decisions shape alliances, territory, and politics</li>
-<li>Mix of Edge-style challenges and Rebellion strategy</li>
-</ul>
-<button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
+  <div class="container">
+    <h1>The Fractured Republic</h1>
+    <h2>Pitch</h2>
+    <p>Political instability and corruption plague a Mid Rim system. The crew is hired to mediate disputes, protect key figures, or sabotage schemes. Each choice ripples through planetary politics and Imperial oversight, giving players tangible impact on the region’s fate.</p>
+    <h2>Player Hooks</h2>
+    <ul>
+      <li>Diplomat or con artist</li>
+      <li>Soldier/mercenary offering protection</li>
+      <li>Rebel sympathizer or spy</li>
+      <li>Force-sensitive acting in secret</li>
+      <li>Smuggler or pilot leveraging local contacts</li>
+    </ul>
+    <h2>Campaign Arc</h2>
+    <ul>
+      <li>Small political jobs → larger conspiracies</li>
+      <li>Player choices shape system alliances</li>
+      <li>Imperial response and Rebel interests escalate tension</li>
+    </ul>
+    <button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
+  </div>
 </body>
 </html>
