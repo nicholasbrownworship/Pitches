@@ -7,7 +7,7 @@
 <style>
 body {
   font-family: 'Orbitron', sans-serif;
-  background: black url('starfield.png') repeat;
+  background: black url('ChatGPT Image Oct 3, 2025, 10_59_16 AM.png') repeat;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -15,11 +15,6 @@ body {
   margin: 0;
   padding: 40px 0;
   color: #FFE81F;
-}
-
-.page-wrapper {
-  position: relative; /* container for floating image */
-  width: 100%;
 }
 
 .container {
@@ -72,62 +67,60 @@ ul li::before {
   box-shadow: 0 0 15px #66ccff;
 }
 
-/* Floating image styling */
+/* Floating image overlapping datapad */
 .floating-image {
-  position: absolute;
-  bottom: 20px;   /* distance from bottom of page */
-  right: 20px;    /* distance from right edge */
-  width: 200px;   /* default size */
-  z-index: 10;    /* on top of container/datapad */
+  position: fixed;   /* pinned to viewport, overlaps everything */
+  bottom: 50px;      /* adjust to align with datapad */
+  right: 50px;       /* adjust to align with datapad */
+  width: 200px;      /* adjust size as needed */
+  z-index: 999;      /* ensures it sits on top */
 }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .floating-image {
     width: 150px;
-    bottom: 15px;
-    right: 15px;
+    bottom: 40px;
+    right: 40px;
   }
 }
 
 @media (max-width: 600px) {
   .floating-image {
     width: 100px;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
   }
 }
 </style>
 </head>
 <body>
-  <div class="page-wrapper">
-    <div class="container">
-      <h1>The Corellian Gambit</h1>
+  <div class="container">
+    <h1>The Corellian Gambit</h1>
 
-      <h2>Pitch</h2>
-      <p>The crew is hired to sabotage Imperial operations on Corellia. Espionage, infiltration, and political manipulation dominate as they navigate Imperial officers, rival crime syndicates, and Rebel contacts. Their actions may determine Corellia’s future.</p>
+    <h2>Pitch</h2>
+    <p>The crew is hired to sabotage Imperial operations on Corellia. Espionage, infiltration, and political manipulation dominate as they navigate Imperial officers, rival crime syndicates, and Rebel contacts. Their actions may determine Corellia’s future.</p>
 
-      <h2>Player Hooks</h2>
-      <ul>
-        <li>Spy or operative with Rebel connections</li>
-        <li>Hacker/slicer skilled at infiltration</li>
-        <li>Pilot with fast ships</li>
-        <li>Con artist or diplomat manipulating factions</li>
-        <li>Force-sensitive lurking in shadows</li>
-      </ul>
+    <h2>Player Hooks</h2>
+    <ul>
+      <li>Spy or operative with Rebel connections</li>
+      <li>Hacker/slicer skilled at infiltration</li>
+      <li>Pilot with fast ships</li>
+      <li>Con artist or diplomat manipulating factions</li>
+      <li>Force-sensitive lurking in shadows</li>
+    </ul>
 
-      <h2>Campaign Arc</h2>
-      <ul>
-        <li>Short missions → uncover Imperial plot</li>
-        <li>Player decisions shape Corellia’s politics</li>
-        <li>Optional Force-sensitive subplots</li>
-      </ul>
+    <h2>Campaign Arc</h2>
+    <ul>
+      <li>Short missions → uncover Imperial plot</li>
+      <li>Player decisions shape Corellia’s politics</li>
+      <li>Optional Force-sensitive subplots</li>
+    </ul>
 
-      <button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
-    </div>
-
-    <!-- Floating image -->
-    <img src="crew_ship.png" alt="Crew Ship" class="floating-image">
+    <button class='back-button' onclick='location.href="index.html"'>Back to Homepage</button>
   </div>
+
+  <!-- Floating image overlapping datapad -->
+  <img src="crew_ship.png" alt="Crew Ship" class="floating-image">
 </body>
 </html>
